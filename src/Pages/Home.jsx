@@ -7,9 +7,9 @@ export default function Home() {
         <section>
             <Hero />
             <div className="mt-32 flex flex-col gap-y-6">
-                <CategoryCard />
-                <CategoryCard />
-                <CategoryCard />
+                <CategoryCard title={"web design"} img={'/home/mobile/image-web-design.jpg'}/>
+                <CategoryCard title={"app design"} img={'/home/mobile/image-app-design.jpg'}/>
+                <CategoryCard title={"graphic design"} img={'/home/mobile/image-graphic-design.jpg'}/>
             </div>
         </section>
     )
