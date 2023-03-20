@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
     return (
-        <section className="bg-peach text-white h-[53rem] overflow-hidden relative max-w-[69.4375rem] max-h-[40rem] md:mx-10 md:rounded-2xl lg:mx-auto">
+        <section className="bg-peach text-white h-[53rem] overflow-hidden relative max-w-[69.4375rem] lg:max-h-[40rem] md:mx-10 md:rounded-2xl min-[1191px]:mx-auto">
             <img
                 className="absolute scale-150 max-w-lg top-52 -right-64 md:-right-24 md:top-60 lg:top-16 lg:right-16 lg:scale-125" 
                 src="/home/desktop/bg-pattern-hero-home.svg" 
