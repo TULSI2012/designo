@@ -15,6 +15,9 @@ module.exports = {
       },
       fontFamily: {
         'jost' : ['Jost', 'sans-serif'],
+      },
+      screens: {
+        'lg': '1440px'
       }
     },
   },
