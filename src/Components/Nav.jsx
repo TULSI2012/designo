@@ -21,11 +21,11 @@ export default function Nav () {
 
 
     return (
-        <nav className="flex justify-between items-center px-6 py-8">
+        <nav className="flex justify-between items-center mx-6 my-8 md:mx-10 md:my-16 xl:max-w-6xl xl:mx-auto">
             <img src="/shared/desktop/logo-dark.png" className="w-52"/>
 
             {/* desktop nav menu */}
-            <ul className="hidden md:flex md:gap-x-4">
+            <ul className="hidden md:flex gap-x-12 text-sm tracking-[0.125rem] uppercase">
                 <li>
                    <a>Our Company</a> 
                 </li>
@@ -49,7 +49,11 @@ export default function Nav () {
             </div>
 
             {/* Mobile nav menu */}
-            <ul className={nav ? 'flex flex-col justify-between py-12 px-6 uppercase text-white text-2xl fixed left-0 top-20 w-full bg-black h-60 ease-in-out duration-1000' : 'flex flex-col justify-between py-12 px-6 uppercase text-white text-2xl bg-black ease-in-out duration-1000 fixed left-[-100%] top-20 w-full h-60'}>
+            {/* Clean up the way this class is written as alot of classes are written twice */}
+            <ul className={nav ? 
+                            'flex flex-col justify-between py-12 px-6 uppercase text-white text-2xl fixed left-0 top-20 w-full bg-black h-60 ease-in-out duration-1000' 
+                                : 
+                            'flex flex-col justify-between py-12 px-6 uppercase text-white text-2xl bg-black ease-in-out duration-1000 fixed left-[-100%] top-20 w-full h-60'}>
                 <li>
                    <a>Our Company</a> 
                 </li>
