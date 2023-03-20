@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
+import Nav from './Components/Nav'
 
 function App() {
 
   return (
     <div>
-      <h1 className='text-7xl'>test</h1>
+      <Nav />
     </div>
   )
 }
