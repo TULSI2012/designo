@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 
 export default function Nav () {
 
-    const [nav, setNav] = useState(true)
+    const [nav, setNav] = useState(false)
 
     {/* opens and closes the mobile nav menu*/}
     function handleNav() {
