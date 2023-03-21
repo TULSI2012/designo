@@ -37,7 +37,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="mt-28 mx-6 flex flex-col gap-y-20 md:mx-10 md:gap-y-0">
+            <section className="mt-28 mx-6 flex flex-col gap-y-20 md:mx-10 md:gap-y-0 md:items-center lg:flex-row lg:justify-center lg:gap-x-8">
                 <ValueCard 
                     title={'passionate'}
                     image={"/home/desktop/illustration-passionate.svg"}
