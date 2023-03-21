@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../Components/home/Hero";
 import CategoryCard from "../Components/CategoryCard";
 import ValueCard from "../Components/home/ValueCard";
+import CallToAction from "../Components/CallToAction";
 
 export default function Home() {
     return (
@@ -53,6 +54,10 @@ export default function Home() {
                     image={"/home/desktop/illustration-friendly.svg"}
                     description={'We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.'}
                 />
+            </section>
+
+            <section className="mt-28 mx-6 md:mx-10 md:mt-4 lg:mx-40">
+                <CallToAction />
             </section>
         </section>
     )
