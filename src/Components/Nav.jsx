@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 
 export default function Nav () {
 
-    const [nav, setNav] = useState(false)
+    const [nav, setNav] = useState(true)
 
     {/* opens and closes the mobile nav menu*/}
     function handleNav() {
@@ -51,9 +51,9 @@ export default function Nav () {
             {/* Mobile nav menu */}
             {/* Clean up the way this class is written as alot of classes are written twice */}
             <ul className={nav ? 
-                            'flex flex-col justify-between py-12 px-6 uppercase text-white text-2xl fixed left-0 top-[5.75rem] w-full bg-black h-60 ease-in-out duration-1000' 
+                            'flex flex-col justify-between py-12 px-6 uppercase text-white text-2xl fixed bg-black left-0 top-[5.75rem] w-full h-60 ease-in-out duration-1000 z-50' 
                                 : 
-                            'flex flex-col justify-between py-12 px-6 uppercase text-white text-2xl bg-black ease-in-out duration-1000 fixed left-[-100%] top-[5.75rem] w-full h-60'}>
+                            'flex flex-col justify-between py-12 px-6 uppercase text-white text-2xl fixed bg-black left-[-100%] top-[5.75rem] w-full h-60 ease-in-out duration-1000 z-50'}>
                 <li>
                    <a>Our Company</a> 
                 </li>
