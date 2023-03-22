@@ -3,6 +3,7 @@ import Hero from "../Components/home/Hero";
 import CategoryCard from "../Components/CategoryCard";
 import ValueCard from "../Components/home/ValueCard";
 import CallToAction from "../Components/CallToAction";
+import Footer from "../Components/Footer";
 
 export default function Home() {
     return (
@@ -56,9 +57,10 @@ export default function Home() {
                 />
             </section>
 
-            <section className="mt-28 mx-6 md:mx-10 md:mt-4 lg:mx-40">
+            <section className="mt-28 mx-6 relative z-20 md:mx-10 md:mt-4 lg:mx-40">
                 <CallToAction />
             </section>
+            <Footer />
         </section>
     )
 }
