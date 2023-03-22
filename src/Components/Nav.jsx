@@ -26,13 +26,13 @@ export default function Nav () {
 
             {/* desktop nav menu */}
             <ul className="hidden md:flex gap-x-12 text-sm tracking-[0.125rem] uppercase">
-                <li>
+                <li className="border-b border-b-transparent cursor-pointer hover:border-b-dark-grey/25 transition-all duration-200 ease-in-out">
                    <a>Our Company</a> 
                 </li>
-                <li>
+                <li className="border-b border-b-transparent cursor-pointer hover:border-b-dark-grey/25 transition-all duration-200 ease-in-out">
                    <a>Locations</a>
                 </li>
-                <li>
+                <li className="border-b border-b-transparent cursor-pointer hover:border-b-dark-grey/25 transition-all duration-200 ease-in-out">
                    <a>Contact</a>
                 </li>
             </ul>

@@ -2,21 +2,21 @@ import React from "react";
 
 export default function CategoryCard(props) {
     return (
-        <div className="mx-6 bg-black flex flex-col items-center justify-center gap-y-3 h-full rounded-2xl relative overflow-hidden md:mx-10 min-[1191px]:mx-0">
+        <div className="mx-6 bg-black/50 flex flex-col items-center justify-center gap-y-3 h-full rounded-2xl relative overflow-hidden md:mx-10 min-[1191px]:mx-0 hover:bg-peach cursor-pointer transition-colors duration-300 ease-in-out">
 
             {/* Mobile background image */}
             <img
-                className="absolute h-full w-full mix-blend-overlay md:invisible" 
+                className="absolute h-full w-full mix-blend-multiply md:invisible" 
                 src={props.mobileImg} 
             />
             {/* Tablet background image */}
             <img
-                className="absolute h-full w-full mix-blend-overlay invisible md:visible lg:invisible" 
+                className="absolute h-full w-full mix-blend-multiply invisible md:visible lg:invisible" 
                 src={props.tabletImg} 
             />
             {/* Desktop background image */}
             <img
-                className="absolute h-full w-full mix-blend-overlay invisible lg:visible" 
+                className="absolute h-full w-full mix-blend-multiply invisible lg:visible" 
                 src={props.desktopImg} 
             />
 

@@ -9,13 +9,13 @@ export default function Footer() {
                     src="/shared/desktop/logo-light.png" 
                 />
                 <ul className="uppercase tracking-[0.125rem] text-center text-sm pt-8 border-t border-t-white/5 md:border-none md:flex md:gap-x-10 md:pt-0">
-                    <li className="mb-8 md:mb-0">
+                    <li className="mb-8 md:mb-0 border-b border-b-transparent cursor-pointer hover:border-b-white/25 transition-all duration-200 ease-in-out">
                         <a href="#">Our Company</a>
                     </li>
-                    <li className="mb-8 md:mb-0">
+                    <li className="mb-8 md:mb-0 border-b border-b-transparent cursor-pointer hover:border-b-white/25 transition-all duration-200 ease-in-out">
                         <a href="#">Locations</a>
                     </li>
-                    <li className="mb-10 md:mb-0">
+                    <li className="mb-10 md:mb-0 border-b border-b-transparent cursor-pointer hover:border-b-white/25 transition-all duration-200 ease-in-out">
                         <a href="#">Contact</a>
                     </li>
                 </ul>
@@ -34,11 +34,21 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="flex items-center justify-center gap-x-4">
-                    <img src="/shared/desktop/icon-facebook.svg" />
-                    <img src="/shared/desktop/icon-youtube.svg" />
-                    <img src="/shared/desktop/icon-twitter.svg" />
-                    <img src="/shared/desktop/icon-pinterest.svg" />
-                    <img src="/shared/desktop/icon-instagram.svg" />
+                    <img 
+                        className="cursor-pointer hover:scale-105"
+                        src="/shared/desktop/icon-facebook.svg" />
+                    <img 
+                        className="cursor-pointer hover:scale-105"
+                        src="/shared/desktop/icon-youtube.svg" />
+                    <img 
+                        className="cursor-pointer hover:scale-105"
+                        src="/shared/desktop/icon-twitter.svg" />
+                    <img 
+                        className="cursor-pointer hover:scale-105"
+                        src="/shared/desktop/icon-pinterest.svg" />
+                    <img 
+                        className="cursor-pointer hover:scale-105"
+                        src="/shared/desktop/icon-instagram.svg" />
                 </div>
             </div>
         </footer>

@@ -12,12 +12,12 @@ export default function Hero() {
                     <h1 className="mx-auto text-[2rem] font-medium text-center leading-9 relative max-w-xl md:text-5xl md:leading-[3rem] lg:text-left">
                         Award-winning custom designs and digital branding solutions
                     </h1>
-                    <p className="mt-6 mx-auto text-center text-[0.9375rem] max-w-[20.4375rem] leading-6 relative md:max-w-[27.85rem] md:leading-[1.625rem] md:text-base lg:text-left lg:mx-0">
+                    <p className="mt-6 mx-auto text-center text-[0.9375rem] max-w-[20.4375rem] leading-6 relative z-50 md:max-w-[27.85rem] md:leading-[1.625rem] md:text-base lg:text-left lg:mx-0">
                         With over 10 years in the industry, we are experienced in creating fully responsive
                         websites, app design, and engaging brand experiences. 
                         <br className="md:hidden"/> Find out more about our services.
                     </p>
-                    <button className="mx-auto mt-6 block bg-white text-dark-grey font-medium tracking-wider w-36 h-14 rounded-lg uppercase text-[0.9375rem] relative lg:mx-0 lg:mt-10">
+                    <button className="mx-auto mt-6 block bg-white text-dark-grey font-medium tracking-wider w-36 h-14 rounded-lg uppercase text-[0.9375rem] relative z-50 lg:mx-0 lg:mt-10 hover:bg-light-peach hover:text-white transition-all duration-200 ease-in-out">
                         Learn More
                     </button>
                 </div>
