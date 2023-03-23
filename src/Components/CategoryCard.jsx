@@ -1,8 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function CategoryCard(props) {
+
+    const navigate = useNavigate()
+
     return (
-        <div className="mx-6 bg-black/50 flex flex-col items-center justify-center gap-y-3 h-full rounded-2xl relative overflow-hidden md:mx-10 min-[1191px]:mx-0 hover:bg-peach cursor-pointer transition-colors duration-300 ease-in-out">
+        <div 
+            onClick={() => navigate(props.pageUrl)}
+            className="mx-6 bg-black/50 flex flex-col items-center justify-center gap-y-3 h-full rounded-2xl relative overflow-hidden md:mx-10 min-[1191px]:mx-0 hover:bg-peach cursor-pointer transition-colors duration-300 ease-in-out">
 
             {/* Mobile background image */}
             <img

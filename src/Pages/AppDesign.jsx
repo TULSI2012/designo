@@ -6,31 +6,30 @@ import ProductCard from "../Components/design pages/ProductCard";
 import Footer from "../Components/Footer";
 import data from '../data'
 
-export default function WebDesign() {
+export default function AppDesign() {
 
-    const [webDesign, setWebDesign] = ([data.filter(product => product.category == "web-design")])
+    const [appDesign, setAppDesign] = useState(data.filter(product => product.category == "app-design"))
 
-    const productElements = webDesign.map(product => {
+    const productElements = appDesign.map(product => {
         return <ProductCard key={product.id} img={product.img} name={product.name} summary={product.summary} />
     })
 
     return (
         <section>
             <Header 
-                name={"Web Design"} 
-                summary={"We build websites that serve as powerful marketing tools and bring memorable brand experiences."}
-            />
+                name={"App Design"}
+                summary={"Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."}/>
             <div className="max-w-[69.4375rem] mx-auto flex flex-col gap-y-10 mb-24 md:gap-y-8 lg:flex-row lg:flex-wrap lg:gap-x-6">
                 {productElements}
             </div>
             <div className="flex flex-col gap-y-6 max-w-[69.4375rem] mx-auto md:mb-32 lg:flex-row lg:justify-center lg:h-80 lg:gap-x-8 lg:mb-40">
                 <div className="h-[16rem] md:h-[13rem] lg:h-80 lg:w-[33.8125rem]">
                     <CategoryCard 
-                        title={"app design"}
-                        pageUrl={"/appdesign"} 
-                        mobileImg={'/home/mobile/image-app-design.jpg'}
-                        tabletImg={'/home/tablet/image-app-design.jpg'}
-                        desktopImg={'/home/desktop/image-app-design.jpg'}
+                        title={"web design"}
+                        pageUrl={"/webdesign"} 
+                        mobileImg={'/home/mobile/image-web-design.jpg'}
+                        tabletImg={'/home/tablet/image-web-design.jpg'}
+                        desktopImg={'/home/desktop/image-web-design-large.jpg'}
                     />
                 </div>
                 <div className="h-[16rem] md:h-[13rem] lg:h-80 lg:w-[33.8125rem]">

@@ -6,20 +6,19 @@ import ProductCard from "../Components/design pages/ProductCard";
 import Footer from "../Components/Footer";
 import data from '../data'
 
-export default function WebDesign() {
+export default function GraphicDesign() {
 
-    const [webDesign, setWebDesign] = ([data.filter(product => product.category == "web-design")])
+    const [graphicDesign, setGraphicDesign] = useState(data.filter(product => product.category == "graphic-design"))
 
-    const productElements = webDesign.map(product => {
+    const productElements = graphicDesign.map(product => {
         return <ProductCard key={product.id} img={product.img} name={product.name} summary={product.summary} />
     })
 
     return (
         <section>
             <Header 
-                name={"Web Design"} 
-                summary={"We build websites that serve as powerful marketing tools and bring memorable brand experiences."}
-            />
+                name={"Graphic Design"}
+                summary={"We deliver eye-catching branding materials that are tailored to meet your business objectives."}/>
             <div className="max-w-[69.4375rem] mx-auto flex flex-col gap-y-10 mb-24 md:gap-y-8 lg:flex-row lg:flex-wrap lg:gap-x-6">
                 {productElements}
             </div>
@@ -35,11 +34,11 @@ export default function WebDesign() {
                 </div>
                 <div className="h-[16rem] md:h-[13rem] lg:h-80 lg:w-[33.8125rem]">
                     <CategoryCard 
-                        title={"graphic design"}
-                        pageUrl={"/graphicdesign"} 
-                        mobileImg={'/home/mobile/image-graphic-design.jpg'}
-                        tabletImg={'/home/tablet/image-graphic-design.jpg'}
-                        desktopImg={'/home/desktop/image-graphic-design.jpg'}
+                        title={"web design"}
+                        pageUrl={"/webdesign"} 
+                        mobileImg={'/home/mobile/image-web-design.jpg'}
+                        tabletImg={'/home/tablet/image-web-design.jpg'}
+                        desktopImg={'/home/desktop/image-web-design-small.jpg'}
                     />
                 </div>
             </div>
