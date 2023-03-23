@@ -2,12 +2,16 @@ import React from "react";
 import Header from "../Components/design pages/Header";
 import CallToAction from "../Components/CallToAction";
 import CategoryCard from "../Components/CategoryCard";
+import ProductCard from "../Components/design pages/ProductCard";
 import Footer from "../Components/Footer";
+import data from '../data'
 
 export default function WebDesign() {
+
     return (
         <section>
             <Header />
+            <ProductCard />
             <div className="flex flex-col gap-y-6 h-[32.75rem]">
                 <CategoryCard 
                     title={"app design"} 
