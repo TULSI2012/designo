@@ -25,7 +25,7 @@ const products = [
         category: "web-design",
         name: "Builder",
         summary: "Connects users with local contractors based on their location",
-        img: "/web-design/desktop/image-photon.jpg",
+        img: "/web-design/desktop/image-builder.jpg",
     }, 
     {
         id: "5",

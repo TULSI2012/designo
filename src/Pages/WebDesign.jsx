@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Components/design pages/Header";
 import CallToAction from "../Components/CallToAction";
 import CategoryCard from "../Components/CategoryCard";
@@ -8,10 +8,18 @@ import data from '../data'
 
 export default function WebDesign() {
 
+    const [webDesign, setWebDesign] = ([data.filter(product => product.category == "web-design")])
+
+    const productElements = webDesign.map(product => {
+        return <ProductCard key={product.id} img={product.img} name={product.name} summary={product.summary} />
+    })
+
     return (
         <section>
             <Header />
-            <ProductCard />
+            <div className="max-w-[69.4375rem] mx-auto flex flex-col gap-y-10 mb-24 md:gap-y-8 lg:flex-row lg:flex-wrap lg:gap-x-6">
+                {productElements}
+            </div>
             <div className="flex flex-col gap-y-6 h-[32.75rem]">
                 <CategoryCard 
                     title={"app design"} 
