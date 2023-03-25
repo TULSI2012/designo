@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 
 export default function Nav () {
 
@@ -22,18 +23,20 @@ export default function Nav () {
 
     return (
         <nav className="flex justify-between items-center mx-6 my-8 md:mx-10 md:my-16 xl:max-w-6xl xl:mx-auto">
-            <img src="/shared/desktop/logo-dark.png" className="w-52"/>
+            <Link to="/">
+                <img src="/shared/desktop/logo-dark.png" className="w-52"/>
+            </Link>
 
             {/* desktop nav menu */}
             <ul className="hidden md:flex gap-x-12 text-sm tracking-[0.125rem] uppercase">
                 <li className="border-b border-b-transparent cursor-pointer hover:border-b-dark-grey/25 transition-all duration-200 ease-in-out">
-                   <a>Our Company</a> 
+                   <Link to="/about">Our Company</Link> 
                 </li>
                 <li className="border-b border-b-transparent cursor-pointer hover:border-b-dark-grey/25 transition-all duration-200 ease-in-out">
-                   <a>Locations</a>
+                   <Link to="/locations">Locations</Link>
                 </li>
                 <li className="border-b border-b-transparent cursor-pointer hover:border-b-dark-grey/25 transition-all duration-200 ease-in-out">
-                   <a>Contact</a>
+                   <Link to="/contact">Contact</Link>
                 </li>
             </ul>
 
@@ -55,13 +58,13 @@ export default function Nav () {
                                 : 
                             'flex flex-col justify-between py-12 px-6 uppercase text-white text-2xl fixed bg-black left-[-100%] top-[5.75rem] w-full h-60 ease-in-out duration-1000 z-50'}>
                 <li>
-                   <a>Our Company</a> 
+                    <Link to="/about">Our Company</Link> 
                 </li>
                 <li>
-                   <a>Locations</a>
+                    <Link to="/locations">Locations</Link>
                 </li>
                 <li >
-                   <a>Contact</a>
+                    <Link to="/contact">Contact</Link>
                 </li>
             </ul>
         </nav>
