@@ -2,6 +2,7 @@ import React from "react";
 import AboutHeader from "../Components/about/AboutHeader";
 import TalentCard from "../Components/about/TalentCard";
 import LocationLink from "../Components/LocationLink";
+import RealDealCard from "../Components/about/RealDealCard";
 import CallToAction from "../Components/CallToAction";
 import Footer from "../Components/Footer";
 
@@ -17,7 +18,9 @@ export default function About() {
                 <LocationLink country={"united kingdom"} img={"/shared/desktop/illustration-united-kingdom.svg"}/>
             </section>
 
-            <section className="mt-28 mx-6 relative z-20 md:mx-10 md:mt-4 lg:mx-40">
+            <RealDealCard />
+
+            <section className="mt-32 mx-6 relative z-20 md:mx-10 lg:mx-40">
                 <CallToAction />
             </section>
             <Footer />
