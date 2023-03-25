@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutHeader() {
     return (
-            <section className=" bg-peach text-white pb-20 bg-[url('/about/mobile/bg-pattern-hero-about-mobile.svg')] bg-[right_bottom_-27rem] bg-no-repeat md:mx-10 md:rounded-2xl md:bg-[url('/about/desktop/bg-pattern-hero-about-desktop.svg')] md:bg-left lg:flex lg:flex-row-reverse lg:h-[30rem] lg:items-center lg:pb-0 lg:justify-between">
+            <section className="max-w-[69.4375rem] bg-peach text-white pb-20 bg-[url('/about/mobile/bg-pattern-hero-about-mobile.svg')] bg-[right_bottom_-27rem] bg-no-repeat md:mx-10 md:rounded-2xl md:bg-[url('/about/desktop/bg-pattern-hero-about-desktop.svg')] md:bg-left lg:flex lg:flex-row-reverse lg:h-[30rem] lg:items-center lg:pb-0 lg:justify-between min-[1191px]:mx-auto">
                 <picture>
                     <source media="(min-width:1440px)" srcSet="/about/desktop/image-about-hero.jpg" />
                     <source media="(min-width:768px)" srcSet="/about/tablet/image-about-hero.jpg" />

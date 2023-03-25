@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TalentCard() {
     return (
-            <section className=" bg-[#FDF3F0] pb-20 bg-[url('/shared/desktop/bg-pattern-three-circles.svg')] bg-[left_20rem] bg-no-repeat md:mx-10 md:mt-28 md:bg-[center_top_12rem] lg:flex lg:h-[40rem] lg:items-center lg:pb-0 md:rounded-2xl lg:bg-[right_12rem_bottom]">
+            <section className="max-w-[69.4375rem] bg-[#FDF3F0] pb-20 bg-[url('/shared/desktop/bg-pattern-three-circles.svg')] bg-[left_20rem] bg-no-repeat md:mx-10 md:mt-28 md:bg-[center_top_12rem] lg:flex lg:h-[40rem] lg:items-center lg:pb-0 md:rounded-2xl lg:bg-[right_12rem_bottom] min-[1191px]:mx-auto">
                 <picture>
                     <source media="(min-width:1440px)" srcSet="/about/desktop/image-world-class-talent.jpg" />
                     <source media="(min-width:768px)" srcSet="/about/tablet/image-world-class-talent.jpg" />
