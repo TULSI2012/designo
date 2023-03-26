@@ -6,6 +6,7 @@ import AppDesign from './Pages/AppDesign'
 import GraphicDesign from './Pages/GraphicDesign'
 import About from './Pages/About'
 import Locations from './Pages/Locations'
+import Contact from './Pages/Contact'
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path='/graphicdesign' element={<GraphicDesign />} />
         <Route path='/about' element={<About />} />
         <Route path='/locations' element={<Locations />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </div>
   )
