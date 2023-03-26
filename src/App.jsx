@@ -5,6 +5,7 @@ import WebDesign from './Pages/WebDesign'
 import AppDesign from './Pages/AppDesign'
 import GraphicDesign from './Pages/GraphicDesign'
 import About from './Pages/About'
+import Locations from './Pages/Locations'
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/appdesign' element={<AppDesign />} />
         <Route path='/graphicdesign' element={<GraphicDesign />} />
         <Route path='/about' element={<About />} />
+        <Route path='/locations' element={<Locations />} />
       </Routes>
     </div>
   )
