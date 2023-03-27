@@ -13,3 +13,11 @@
     font-family: Jost, sans-serif;
   }
 }
+/* This removes the up and down arrows for the phone input field (type number) */
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
