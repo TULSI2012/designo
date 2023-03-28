@@ -1,6 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function CallToAction() {
+
+    const navigate = useNavigate()
+
     return (
         <div className="mx-auto bg-peach text-white py-16 px-6 bg-[url('/shared/desktop/bg-pattern-call-to-action.svg')] bg-left bg-no-repeat rounded-2xl max-w-[69.4375rem] min-[936px]:bg-right lg:flex lg:items-center lg:justify-between lg:px-24">
             <div>
@@ -12,7 +16,9 @@ export default function CallToAction() {
                     your business grow.
                 </p>
             </div>
-            <button className="bg-white text-dark-grey font-medium tracking-[0.0625rem] uppercase w-36 rounded-lg py-4 px-2 block mx-auto lg:mx-0 hover:bg-light-peach hover:text-white transition-all duration-200 ease-in-out">
+            <button 
+                onClick={() => navigate("/contact")}
+                className="bg-white text-dark-grey font-medium tracking-[0.0625rem] uppercase w-36 rounded-lg py-4 px-2 block mx-auto lg:mx-0 hover:bg-light-peach hover:text-white transition-all duration-200 ease-in-out">
                 Get in Touch
             </button>
         </div>

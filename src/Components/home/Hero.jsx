@@ -1,6 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
+
+    const navigate = useNavigate()
+
     return (
         <section className="bg-peach text-white h-[53rem] overflow-hidden relative max-w-[69.4375rem] md:mx-10 md:rounded-2xl lg:max-h-[40rem] min-[1191px]:mx-auto">
             <img
@@ -17,7 +21,9 @@ export default function Hero() {
                         websites, app design, and engaging brand experiences. 
                         <br className="md:hidden"/> Find out more about our services.
                     </p>
-                    <button className="mx-auto mt-6 block bg-white text-dark-grey font-medium tracking-wider w-36 h-14 rounded-lg uppercase text-[0.9375rem] relative z-50 lg:mx-0 lg:mt-10 hover:bg-light-peach hover:text-white transition-all duration-200 ease-in-out">
+                    <button 
+                        onClick={() => navigate("/about")}
+                        className="mx-auto mt-6 block bg-white text-dark-grey font-medium tracking-wider w-36 h-14 rounded-lg uppercase text-[0.9375rem] relative z-50 lg:mx-0 lg:mt-10 hover:bg-light-peach hover:text-white transition-all duration-200 ease-in-out">
                         Learn More
                     </button>
                 </div>
