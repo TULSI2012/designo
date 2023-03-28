@@ -1,6 +1,6 @@
 # Frontend Mentor - Designo agency website solution
 
-This is a solution to the [Designo agency website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Designo agency website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT). 
 
 ## Table of contents
 
@@ -16,100 +16,86 @@ This is a solution to the [Designo agency website challenge on Frontend Mentor](
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
 
 Users should be able to:
 
-- View the optimal layout for each page depending on their device's screen size
-- See hover states for all interactive elements throughout the site
-- Receive an error message when the contact form is submitted if:
+- View the optimal layout for each page depending on their device's screen size ✅
+- See hover states for all interactive elements throughout the site ✅
+- Receive an error message when the contact form is submitted if: ✅
   - The `Name`, `Email Address` or `Your Message` fields are empty should show "Can't be empty"
   - The `Email Address` is not formatted correctly should show "Please use a valid email address"
 - **Bonus**: View actual locations on the locations page maps (we recommend [Leaflet JS](https://leafletjs.com/) for this)
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](/public/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/JomersDev/designo](https://github.com/JomersDev/designo)
+- Live Site URL: [designo-jamesm.netlify.app](designo-jamesm.netlify.app)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- React
+- React Router
+- React Hook Form
+- Yup
+- Tailwind CSS
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+For this project I wanted to try out React Hook Form and Yup for easy form validation and setup. Using this package made the process of setting up a form in react so much more intuitive and easy to adjust. Please see my code below for the form schema I set up with Yup for this project. 
 
-To see how you can add code snippets, see below:
+```jsx
+const schema = yup.object().shape({
+        name: yup.string().required("Can't be empty"),
+        email: yup.string().email("Please use a valid email address").required("Can't be empty"),
+        phone: yup.number().integer().notRequired().typeError('Please use a valid phone number'),
+        message: yup.string().required("Can't be empty")
+    })
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+    const {register, handleSubmit, formState: {errors} } = useForm({
+        resolver: yupResolver(schema)
+    })
+
+    //include this on input fields and replace "name" with what your form input field is called ie "email", "phone" etc
+    {...register("name")}
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+I Discovered the HTML picture tag and how it makes switching images for different screen sizes so much more intuitive and easy to implement. Please see my code below that automatically switches the image source when the screen size reaches the breakpoints of 768px and 1440px.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```HTML
+    <picture>
+        <source media="(min-width:1440px)" srcSet="/about/desktop/image-about-hero.jpg" />
+        <source media="(min-width:768px)" srcSet="/about/tablet/image-about-hero.jpg" />
+        <img src="/about/mobile/image-about-hero.jpg" className="w-full mb-8 md:rounded-t-2xl lg:rounded-l-none lg:rounded-r-2xl lg:mb-0"/>
+    </picture>
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I'd like to implement Leaflet JS and solve the bonus requirement for this project
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [React Hook Form](https://react-hook-form.com/) - React form setup and validation
+- [Yup](https://www.npmjs.com/package/yup) - Straighforward integration with react hook form - validation
+- [Kevin Powell - Picture Tag](https://www.youtube.com/shorts/d9i68C628Nk) - Great YouTube short outlining how to use the HTML picture tag
+- [Tailwind CSS](https://tailwindcss.com/docs/installation) - The tailwind docs are excellent and easy to understand
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) - A must have extension when using Tailwind. Adds auto complete when writing tailwind classes and much more.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [James McGrory](https://jamesmcgrory.dev/)
+- Frontend Mentor - [@JomersDev](https://www.frontendmentor.io/profile/JomersDev)
+- Twitter - [@JomersDev](https://twitter.com/JomersDev)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
