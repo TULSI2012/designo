@@ -94,8 +94,5 @@ I'd like to implement Leaflet JS and solve the bonus requirement for this projec
 
 ## Author
 
-- Website - [James McGrory](https://jamesmcgrory.dev/)
-- Frontend Mentor - [@JomersDev](https://www.frontendmentor.io/profile/JomersDev)
-- Twitter - [@JomersDev](https://twitter.com/JomersDev)
-
+- Tulsi Kalola
 
