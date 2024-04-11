@@ -24,12 +24,12 @@ export default function Footer() {
                 <div className="flex flex-col gap-y-10 md:flex-row md:gap-x-12 lg:gap-x-44">
                     <div>
                         <p className="font-medium">Designo Central Office</p>
-                        <p>3886 Wellington Street</p>
+                        <p>375 bay mills Street</p>
                         <p>Toronto, Ontario M9C 3J5</p>
                     </div>
                     <div>
                         <p className="font-medium">Contact Us (Central Office)</p>
-                        <p>P: +1 253-863-8967</p>
+                        <p>P: +1 123-456-7890</p>
                         <p>M: contact@designo.co</p>
                     </div>
                 </div>
