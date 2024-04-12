@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/TULSI2012/designo](https://github.com/TULSI2012/designo)
-- Live Site URL: [https://designwithtulsi.netlify.app/](https://designo-jamesm.netlify.app)
+- Live Site URL: [https://designwithtulsi.netlify.app/](https://designwithtulsi.netlify.app/)
 
 ## My process
 
